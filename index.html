@@ -1,84 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    
-   <style>
-       p{
-           font-size:16px;
-           font-family:monospace;
-       }
-       h2{
-           font-family:Lobster,Monospace;
-       }
-.red-text{
-    color:red;
-}
-.smaller-image{
-    width:100px;
-}
-.thick-green-border{
-    border-width:10px;
-    border-style:solid;
-    border-color:green;
-    border-radius:50%;
-    
-}
-.silver-background{
-    background-color:silver;
-}
-#cat-photo-form{
-    background-color:green;
-}
-
-   </style>
+    <style>
+        .injected-text {
+          margin-bottom: -25px;
+          text-align: center;
+        }
+      
+        .box {
+          border-style: solid;
+          border-color: black;
+          border-width: 5px;
+          text-align: center;
+        }
+      
+        .yellow-box {
+          background-color: yellow;
+          padding: 10px;
+        }
+      
+        .red-box {
+          background-color: crimson;
+          color: #fff;
+          padding: 20px;
+        }
+      
+        .blue-box {
+          background-color: blue;
+          color: #fff;
+          padding: 20px;
+        }
+      </style>
 </head>
 <body>
-    
-    <h2 class="red-text">CatPhotoApp</h2>
-    <main>
-        
-    <p class="red-text">Click Here to View more <a href="#">cat photos</a></p>
-      
-<br>
-       <a href="#"> <img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cat looking upside down."></a>
-       <div class="silver-background">
-       <p>Things cats love:</p>
-   <ul>
-       <li>Milk</li>
-       <li>Rats</li>
-       <li>Sleep</li>
-    </ul>
-    <p>Top three things cats hate:</p>
-    <ol>
-        <li>Getting Caught</li>
-        <li>Dogs</li>
-        <li>Other cats</li>
-    </ol>
-    </div>
-    <form action="https://www.freecatphotoapp.com/submit-cat-photo" id="cat-photo-form"> <input type="text" placeholder=" cat photo url" required><br>
-        <label for="indoor">
-            <input type="checkbox" id="indoor" name="personality" value="loving" checked>Loving
-        </label>
-        <label for="outdoor">
-            <input type="checkbox" id="outdoor" name="personality" value="lazy">Lazy
-        </label>
-        <label for="">
-            <input type="checkbox" id="abc" name="personality" value="energetic">Energetic
-        </label>
-        <br>
-        <label for="indoor">
-            <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
-        </label>
-        <label for="outdoor">
-            <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
-        </label>
-       <br><br>
-    <button type="submit">Submit</button>
-    </form>
-   
-     </main>
-   
-    
+    <h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
 </body>
 </html>
